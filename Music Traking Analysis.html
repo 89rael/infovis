@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Music Traking Analysis</title>
+<title>Music_Traking_Analysis</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13128,10 +13128,11 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
 </pre></div>
 
     </div>
@@ -13148,10 +13149,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">artists_top</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/lastfm_top_artists.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">artists_top</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/89rael/infovis/gh-pages/data/lastfm_top_artists.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13161,7 +13162,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">artists_top</span>
@@ -13177,7 +13178,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -13274,7 +13275,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">artists_top</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
@@ -13305,18 +13306,18 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[49]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-6d0b27a05f614b5b85a65c3bdefc0ed1"></div>
+<div id="altair-viz-e120d1ef3b1d4d2b8230a768a132b8e7"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6d0b27a05f614b5b85a65c3bdefc0ed1") {
-      outputDiv = document.getElementById("altair-viz-6d0b27a05f614b5b85a65c3bdefc0ed1");
+    if (outputDiv.id !== "altair-viz-e120d1ef3b1d4d2b8230a768a132b8e7") {
+      outputDiv = document.getElementById("altair-viz-e120d1ef3b1d4d2b8230a768a132b8e7");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13377,10 +13378,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tracks_top</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/lastfm_top_tracks.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tracks_top</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/89rael/infovis/gh-pages/data/lastfm_top_tracks.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13390,7 +13391,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tracks_top</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13406,7 +13407,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[52]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -13478,7 +13479,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">tracks_top</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
@@ -13509,18 +13510,18 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-bcc59d01cb7b419cb536782c4b91c425"></div>
+<div id="altair-viz-fa5e4e47ffba450f96717bfcd6d310aa"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bcc59d01cb7b419cb536782c4b91c425") {
-      outputDiv = document.getElementById("altair-viz-bcc59d01cb7b419cb536782c4b91c425");
+    if (outputDiv.id !== "altair-viz-fa5e4e47ffba450f96717bfcd6d310aa") {
+      outputDiv = document.getElementById("altair-viz-fa5e4e47ffba450f96717bfcd6d310aa");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13581,10 +13582,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">albums_top</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/lastfm_top_albums.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">albums_top</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/89rael/infovis/gh-pages/data/lastfm_top_albums.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13594,7 +13595,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">albums_top</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -13610,7 +13611,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[57]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -13712,7 +13713,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">albums_top</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
@@ -13743,18 +13744,18 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[59]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-86447239c3d1464cabdb1c92ed2f9e08"></div>
+<div id="altair-viz-52840548fa6b40c3b686ad5383b7abbb"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-86447239c3d1464cabdb1c92ed2f9e08") {
-      outputDiv = document.getElementById("altair-viz-86447239c3d1464cabdb1c92ed2f9e08");
+    if (outputDiv.id !== "altair-viz-52840548fa6b40c3b686ad5383b7abbb") {
+      outputDiv = document.getElementById("altair-viz-52840548fa6b40c3b686ad5383b7abbb");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13815,11 +13816,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># read the all-time scrobbles data set</span>
-<span class="n">scrobbles</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/lastfm_scrobbles.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<span class="n">scrobbles</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/89rael/infovis/gh-pages/data/lastfm_scrobbles.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
 <span class="n">scrobbles</span> <span class="o">=</span> <span class="n">scrobbles</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:,}</span><span class="s1"> total scrobbles&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scrobbles</span><span class="p">)))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:,}</span><span class="s1"> total artists&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scrobbles</span><span class="p">[</span><span class="s1">&#39;artist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())))</span>
@@ -13851,7 +13852,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scrobbles</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13867,7 +13868,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[82]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -13963,7 +13964,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># convert to datetime</span>
@@ -13977,7 +13978,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scrobbles</span> <span class="o">=</span> <span class="n">scrobbles</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;datetime&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -13990,7 +13991,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scrobbles</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scrobbles</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
@@ -14007,7 +14008,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scrobbles</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14023,7 +14024,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[86]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -14156,7 +14157,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get the play count sum by day of the week</span>
@@ -14170,7 +14171,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dayname_counts</span>
@@ -14186,7 +14187,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[97]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -14262,10 +14263,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dayname_counts</span><span class="o">.</span><span class="n">values</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dayname_counts</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 </pre></div>
 
     </div>
@@ -14278,13 +14279,14 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[93]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([39, 48, 28, 34, 17, 31, 53], dtype=int64)</pre>
+<pre>array([&#39;Wednesday&#39;, &#39;Monday&#39;, &#39;Friday&#39;, &#39;Sunday&#39;, &#39;Tuesday&#39;, &#39;Saturday&#39;,
+       &#39;Thursday&#39;], dtype=object)</pre>
 </div>
 
 </div>
@@ -14295,11 +14297,44 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[151]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sorted_days</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span><span class="s1">&#39;Sunday&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;, &#39;Thursday&#39;, &#39;Friday&#39;, &#39;Saturday&#39;, &#39;Sunday&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">dayname_counts</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;day:N&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">),</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;day:N&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;day&#39;</span><span class="p">,</span>  <span class="n">sort</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">dayname_counts</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">sorted_days</span><span class="o">.</span><span class="n">index</span><span class="p">)),</span>
     <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;counts:Q&#39;</span><span class="p">)</span>
     
 <span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
@@ -14326,18 +14361,18 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[151]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-38606d6a60e54d1088ba338513ca6be6"></div>
+<div id="altair-viz-c651a9f257324a01b10d6f9a7e8a1c42"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-38606d6a60e54d1088ba338513ca6be6") {
-      outputDiv = document.getElementById("altair-viz-38606d6a60e54d1088ba338513ca6be6");
+    if (outputDiv.id !== "altair-viz-c651a9f257324a01b10d6f9a7e8a1c42") {
+      outputDiv = document.getElementById("altair-viz-c651a9f257324a01b10d6f9a7e8a1c42");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14379,7 +14414,7 @@ div#notebook {
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "title": {"align": "right", "anchor": "start", "color": "gray", "font": "Courier", "fontSize": 20}}, "data": {"name": "data-c44492dc5c04f538937a31336637e46f"}, "mark": "bar", "encoding": {"x": {"type": "nominal", "field": "day", "title": "count"}, "y": {"type": "quantitative", "field": "counts"}}, "title": "Songs by day", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-c44492dc5c04f538937a31336637e46f": [{"day": "Wednesday", "counts": 53}, {"day": "Monday", "counts": 48}, {"day": "Friday", "counts": 39}, {"day": "Sunday", "counts": 34}, {"day": "Tuesday", "counts": 31}, {"day": "Saturday", "counts": 28}, {"day": "Thursday", "counts": 17}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "title": {"align": "right", "anchor": "start", "color": "gray", "font": "Courier", "fontSize": 20}}, "data": {"name": "data-c44492dc5c04f538937a31336637e46f"}, "mark": "bar", "encoding": {"x": {"type": "nominal", "field": "day", "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "title": "day"}, "y": {"type": "quantitative", "field": "counts"}}, "title": "Songs by day", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-c44492dc5c04f538937a31336637e46f": [{"day": "Wednesday", "counts": 53}, {"day": "Monday", "counts": 48}, {"day": "Friday", "counts": 39}, {"day": "Sunday", "counts": 34}, {"day": "Tuesday", "counts": 31}, {"day": "Saturday", "counts": 28}, {"day": "Thursday", "counts": 17}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -14391,7 +14426,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">weekday_hour_counts</span> <span class="o">=</span> <span class="n">scrobbles</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">,</span><span class="s1">&#39;hour&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;track&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
@@ -14407,7 +14442,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[124]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">weekday_hour_counts</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14423,7 +14458,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[124]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -14490,7 +14525,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[126]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">weekday_hour_counts</span> <span class="o">=</span> <span class="n">weekday_hour_counts</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -14503,7 +14538,95 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weekday_hour_counts</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>weekday_name</th>
+      <th>hour</th>
+      <th>track</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Friday</td>
+      <td>0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Friday</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Friday</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Friday</td>
+      <td>17</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Friday</td>
+      <td>18</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">weekday_hour_counts</span><span class="o">.</span><span class="n">columns</span>
@@ -14519,7 +14642,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[128]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -14536,14 +14659,29 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cats</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]</span>
+<span class="n">weekday_hour_counts</span><span class="p">[</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">(</span><span class="n">weekday_hour_counts</span><span class="p">[</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">],</span> <span class="n">categories</span><span class="o">=</span><span class="n">cats</span><span class="p">,</span> <span class="n">ordered</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">weekday_hour_counts</span> <span class="o">=</span> <span class="n">weekday_hour_counts</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">weekday_hour_counts</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;hour&#39;</span><span class="p">,</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;track&#39;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">,</span>
-    <span class="n">strokeDash</span><span class="o">=</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;hour:N&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;track:Q&#39;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">weekday_hour_counts</span><span class="p">[</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">sorted_days</span><span class="o">.</span><span class="n">index</span><span class="p">)),</span>
+    <span class="c1">#strokeDash=&#39;weekday_name&#39;,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
     <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
 <span class="p">)</span>
@@ -14559,18 +14697,18 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[131]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-fcb3866dfeaa457689382e32cba40574"></div>
+<div id="altair-viz-a81bdf657d1c44dca2996b4bc5d21c09"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-fcb3866dfeaa457689382e32cba40574") {
-      outputDiv = document.getElementById("altair-viz-fcb3866dfeaa457689382e32cba40574");
+    if (outputDiv.id !== "altair-viz-a81bdf657d1c44dca2996b4bc5d21c09") {
+      outputDiv = document.getElementById("altair-viz-a81bdf657d1c44dca2996b4bc5d21c09");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14612,7 +14750,7 @@ div#notebook {
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-1e09ecbc3a6569d631dae7baa5e0805b"}, "mark": "line", "encoding": {"color": {"type": "nominal", "field": "weekday_name"}, "strokeDash": {"type": "nominal", "field": "weekday_name"}, "x": {"type": "quantitative", "field": "hour"}, "y": {"type": "quantitative", "field": "track"}}, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-1e09ecbc3a6569d631dae7baa5e0805b": [{"weekday_name": "Friday", "hour": 0, "track": 9}, {"weekday_name": "Friday", "hour": 1, "track": 5}, {"weekday_name": "Friday", "hour": 2, "track": 4}, {"weekday_name": "Friday", "hour": 17, "track": 8}, {"weekday_name": "Friday", "hour": 18, "track": 1}, {"weekday_name": "Friday", "hour": 20, "track": 1}, {"weekday_name": "Friday", "hour": 22, "track": 7}, {"weekday_name": "Friday", "hour": 23, "track": 4}, {"weekday_name": "Monday", "hour": 0, "track": 11}, {"weekday_name": "Monday", "hour": 15, "track": 3}, {"weekday_name": "Monday", "hour": 16, "track": 1}, {"weekday_name": "Monday", "hour": 18, "track": 11}, {"weekday_name": "Monday", "hour": 19, "track": 7}, {"weekday_name": "Monday", "hour": 20, "track": 2}, {"weekday_name": "Monday", "hour": 21, "track": 6}, {"weekday_name": "Monday", "hour": 23, "track": 7}, {"weekday_name": "Saturday", "hour": 0, "track": 6}, {"weekday_name": "Saturday", "hour": 1, "track": 2}, {"weekday_name": "Saturday", "hour": 11, "track": 2}, {"weekday_name": "Saturday", "hour": 14, "track": 2}, {"weekday_name": "Saturday", "hour": 15, "track": 8}, {"weekday_name": "Saturday", "hour": 16, "track": 2}, {"weekday_name": "Saturday", "hour": 17, "track": 1}, {"weekday_name": "Saturday", "hour": 22, "track": 5}, {"weekday_name": "Sunday", "hour": 17, "track": 6}, {"weekday_name": "Sunday", "hour": 20, "track": 9}, {"weekday_name": "Sunday", "hour": 21, "track": 12}, {"weekday_name": "Sunday", "hour": 22, "track": 4}, {"weekday_name": "Sunday", "hour": 23, "track": 3}, {"weekday_name": "Thursday", "hour": 0, "track": 9}, {"weekday_name": "Thursday", "hour": 1, "track": 4}, {"weekday_name": "Thursday", "hour": 18, "track": 3}, {"weekday_name": "Thursday", "hour": 20, "track": 1}, {"weekday_name": "Tuesday", "hour": 0, "track": 3}, {"weekday_name": "Tuesday", "hour": 1, "track": 2}, {"weekday_name": "Tuesday", "hour": 2, "track": 4}, {"weekday_name": "Tuesday", "hour": 15, "track": 2}, {"weekday_name": "Tuesday", "hour": 16, "track": 3}, {"weekday_name": "Tuesday", "hour": 22, "track": 5}, {"weekday_name": "Tuesday", "hour": 23, "track": 12}, {"weekday_name": "Wednesday", "hour": 0, "track": 8}, {"weekday_name": "Wednesday", "hour": 2, "track": 1}, {"weekday_name": "Wednesday", "hour": 15, "track": 2}, {"weekday_name": "Wednesday", "hour": 16, "track": 10}, {"weekday_name": "Wednesday", "hour": 17, "track": 12}, {"weekday_name": "Wednesday", "hour": 18, "track": 2}, {"weekday_name": "Wednesday", "hour": 22, "track": 6}, {"weekday_name": "Wednesday", "hour": 23, "track": 12}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-e77d4169d69d50469e705ea081fcba9b"}, "mark": "line", "encoding": {"color": {"type": "nominal", "field": "weekday_name", "sort": ["Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Thursday", "Thursday", "Thursday", "Thursday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Sunday", "Sunday", "Sunday", "Sunday", "Sunday"]}, "x": {"type": "nominal", "field": "hour"}, "y": {"type": "quantitative", "field": "track"}}, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-e77d4169d69d50469e705ea081fcba9b": [{"weekday_name": "Monday", "hour": 20, "track": 2}, {"weekday_name": "Monday", "hour": 0, "track": 11}, {"weekday_name": "Monday", "hour": 15, "track": 3}, {"weekday_name": "Monday", "hour": 16, "track": 1}, {"weekday_name": "Monday", "hour": 18, "track": 11}, {"weekday_name": "Monday", "hour": 19, "track": 7}, {"weekday_name": "Monday", "hour": 21, "track": 6}, {"weekday_name": "Monday", "hour": 23, "track": 7}, {"weekday_name": "Tuesday", "hour": 0, "track": 3}, {"weekday_name": "Tuesday", "hour": 1, "track": 2}, {"weekday_name": "Tuesday", "hour": 2, "track": 4}, {"weekday_name": "Tuesday", "hour": 15, "track": 2}, {"weekday_name": "Tuesday", "hour": 16, "track": 3}, {"weekday_name": "Tuesday", "hour": 23, "track": 12}, {"weekday_name": "Tuesday", "hour": 22, "track": 5}, {"weekday_name": "Wednesday", "hour": 22, "track": 6}, {"weekday_name": "Wednesday", "hour": 23, "track": 12}, {"weekday_name": "Wednesday", "hour": 0, "track": 8}, {"weekday_name": "Wednesday", "hour": 2, "track": 1}, {"weekday_name": "Wednesday", "hour": 15, "track": 2}, {"weekday_name": "Wednesday", "hour": 16, "track": 10}, {"weekday_name": "Wednesday", "hour": 17, "track": 12}, {"weekday_name": "Wednesday", "hour": 18, "track": 2}, {"weekday_name": "Thursday", "hour": 20, "track": 1}, {"weekday_name": "Thursday", "hour": 18, "track": 3}, {"weekday_name": "Thursday", "hour": 1, "track": 4}, {"weekday_name": "Thursday", "hour": 0, "track": 9}, {"weekday_name": "Friday", "hour": 0, "track": 9}, {"weekday_name": "Friday", "hour": 1, "track": 5}, {"weekday_name": "Friday", "hour": 2, "track": 4}, {"weekday_name": "Friday", "hour": 17, "track": 8}, {"weekday_name": "Friday", "hour": 18, "track": 1}, {"weekday_name": "Friday", "hour": 20, "track": 1}, {"weekday_name": "Friday", "hour": 22, "track": 7}, {"weekday_name": "Friday", "hour": 23, "track": 4}, {"weekday_name": "Saturday", "hour": 1, "track": 2}, {"weekday_name": "Saturday", "hour": 0, "track": 6}, {"weekday_name": "Saturday", "hour": 22, "track": 5}, {"weekday_name": "Saturday", "hour": 11, "track": 2}, {"weekday_name": "Saturday", "hour": 14, "track": 2}, {"weekday_name": "Saturday", "hour": 15, "track": 8}, {"weekday_name": "Saturday", "hour": 16, "track": 2}, {"weekday_name": "Saturday", "hour": 17, "track": 1}, {"weekday_name": "Sunday", "hour": 17, "track": 6}, {"weekday_name": "Sunday", "hour": 20, "track": 9}, {"weekday_name": "Sunday", "hour": 21, "track": 12}, {"weekday_name": "Sunday", "hour": 22, "track": 4}, {"weekday_name": "Sunday", "hour": 23, "track": 3}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -14624,7 +14762,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">weekday_hour_counts</span><span class="p">)</span><span class="o">.</span><span class="n">mark_area</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
@@ -14632,7 +14770,7 @@ div#notebook {
         <span class="c1">#axis=alt.Axis(format=&#39;%h&#39;, domain=False, tickSize=0)</span>
     <span class="p">),</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;track&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;weekday_name:N&#39;</span><span class="p">,</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;weekday_name:N&#39;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">weekday_hour_counts</span><span class="p">[</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">sorted_days</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
         <span class="c1">#scale=alt.Scale(scheme=&#39;category20b&#39;)</span>
     <span class="p">)</span>
 <span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
@@ -14650,18 +14788,18 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[167]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-61a840448cef45afbb85d2af79d68515"></div>
+<div id="altair-viz-9a533a47790f47379d9a8ba49ae7ed75"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-61a840448cef45afbb85d2af79d68515") {
-      outputDiv = document.getElementById("altair-viz-61a840448cef45afbb85d2af79d68515");
+    if (outputDiv.id !== "altair-viz-9a533a47790f47379d9a8ba49ae7ed75") {
+      outputDiv = document.getElementById("altair-viz-9a533a47790f47379d9a8ba49ae7ed75");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14703,7 +14841,97 @@ div#notebook {
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-1e09ecbc3a6569d631dae7baa5e0805b"}, "mark": "area", "encoding": {"color": {"type": "nominal", "field": "weekday_name"}, "x": {"type": "quantitative", "field": "hour"}, "y": {"type": "quantitative", "axis": null, "field": "track", "stack": "center"}}, "selection": {"selector018": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-1e09ecbc3a6569d631dae7baa5e0805b": [{"weekday_name": "Friday", "hour": 0, "track": 9}, {"weekday_name": "Friday", "hour": 1, "track": 5}, {"weekday_name": "Friday", "hour": 2, "track": 4}, {"weekday_name": "Friday", "hour": 17, "track": 8}, {"weekday_name": "Friday", "hour": 18, "track": 1}, {"weekday_name": "Friday", "hour": 20, "track": 1}, {"weekday_name": "Friday", "hour": 22, "track": 7}, {"weekday_name": "Friday", "hour": 23, "track": 4}, {"weekday_name": "Monday", "hour": 0, "track": 11}, {"weekday_name": "Monday", "hour": 15, "track": 3}, {"weekday_name": "Monday", "hour": 16, "track": 1}, {"weekday_name": "Monday", "hour": 18, "track": 11}, {"weekday_name": "Monday", "hour": 19, "track": 7}, {"weekday_name": "Monday", "hour": 20, "track": 2}, {"weekday_name": "Monday", "hour": 21, "track": 6}, {"weekday_name": "Monday", "hour": 23, "track": 7}, {"weekday_name": "Saturday", "hour": 0, "track": 6}, {"weekday_name": "Saturday", "hour": 1, "track": 2}, {"weekday_name": "Saturday", "hour": 11, "track": 2}, {"weekday_name": "Saturday", "hour": 14, "track": 2}, {"weekday_name": "Saturday", "hour": 15, "track": 8}, {"weekday_name": "Saturday", "hour": 16, "track": 2}, {"weekday_name": "Saturday", "hour": 17, "track": 1}, {"weekday_name": "Saturday", "hour": 22, "track": 5}, {"weekday_name": "Sunday", "hour": 17, "track": 6}, {"weekday_name": "Sunday", "hour": 20, "track": 9}, {"weekday_name": "Sunday", "hour": 21, "track": 12}, {"weekday_name": "Sunday", "hour": 22, "track": 4}, {"weekday_name": "Sunday", "hour": 23, "track": 3}, {"weekday_name": "Thursday", "hour": 0, "track": 9}, {"weekday_name": "Thursday", "hour": 1, "track": 4}, {"weekday_name": "Thursday", "hour": 18, "track": 3}, {"weekday_name": "Thursday", "hour": 20, "track": 1}, {"weekday_name": "Tuesday", "hour": 0, "track": 3}, {"weekday_name": "Tuesday", "hour": 1, "track": 2}, {"weekday_name": "Tuesday", "hour": 2, "track": 4}, {"weekday_name": "Tuesday", "hour": 15, "track": 2}, {"weekday_name": "Tuesday", "hour": 16, "track": 3}, {"weekday_name": "Tuesday", "hour": 22, "track": 5}, {"weekday_name": "Tuesday", "hour": 23, "track": 12}, {"weekday_name": "Wednesday", "hour": 0, "track": 8}, {"weekday_name": "Wednesday", "hour": 2, "track": 1}, {"weekday_name": "Wednesday", "hour": 15, "track": 2}, {"weekday_name": "Wednesday", "hour": 16, "track": 10}, {"weekday_name": "Wednesday", "hour": 17, "track": 12}, {"weekday_name": "Wednesday", "hour": 18, "track": 2}, {"weekday_name": "Wednesday", "hour": 22, "track": 6}, {"weekday_name": "Wednesday", "hour": 23, "track": 12}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-e77d4169d69d50469e705ea081fcba9b"}, "mark": "area", "encoding": {"color": {"type": "nominal", "field": "weekday_name", "sort": ["Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Thursday", "Thursday", "Thursday", "Thursday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Sunday", "Sunday", "Sunday", "Sunday", "Sunday"]}, "x": {"type": "quantitative", "field": "hour"}, "y": {"type": "quantitative", "axis": null, "field": "track", "stack": "center"}}, "selection": {"selector001": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-e77d4169d69d50469e705ea081fcba9b": [{"weekday_name": "Monday", "hour": 20, "track": 2}, {"weekday_name": "Monday", "hour": 0, "track": 11}, {"weekday_name": "Monday", "hour": 15, "track": 3}, {"weekday_name": "Monday", "hour": 16, "track": 1}, {"weekday_name": "Monday", "hour": 18, "track": 11}, {"weekday_name": "Monday", "hour": 19, "track": 7}, {"weekday_name": "Monday", "hour": 21, "track": 6}, {"weekday_name": "Monday", "hour": 23, "track": 7}, {"weekday_name": "Tuesday", "hour": 0, "track": 3}, {"weekday_name": "Tuesday", "hour": 1, "track": 2}, {"weekday_name": "Tuesday", "hour": 2, "track": 4}, {"weekday_name": "Tuesday", "hour": 15, "track": 2}, {"weekday_name": "Tuesday", "hour": 16, "track": 3}, {"weekday_name": "Tuesday", "hour": 23, "track": 12}, {"weekday_name": "Tuesday", "hour": 22, "track": 5}, {"weekday_name": "Wednesday", "hour": 22, "track": 6}, {"weekday_name": "Wednesday", "hour": 23, "track": 12}, {"weekday_name": "Wednesday", "hour": 0, "track": 8}, {"weekday_name": "Wednesday", "hour": 2, "track": 1}, {"weekday_name": "Wednesday", "hour": 15, "track": 2}, {"weekday_name": "Wednesday", "hour": 16, "track": 10}, {"weekday_name": "Wednesday", "hour": 17, "track": 12}, {"weekday_name": "Wednesday", "hour": 18, "track": 2}, {"weekday_name": "Thursday", "hour": 20, "track": 1}, {"weekday_name": "Thursday", "hour": 18, "track": 3}, {"weekday_name": "Thursday", "hour": 1, "track": 4}, {"weekday_name": "Thursday", "hour": 0, "track": 9}, {"weekday_name": "Friday", "hour": 0, "track": 9}, {"weekday_name": "Friday", "hour": 1, "track": 5}, {"weekday_name": "Friday", "hour": 2, "track": 4}, {"weekday_name": "Friday", "hour": 17, "track": 8}, {"weekday_name": "Friday", "hour": 18, "track": 1}, {"weekday_name": "Friday", "hour": 20, "track": 1}, {"weekday_name": "Friday", "hour": 22, "track": 7}, {"weekday_name": "Friday", "hour": 23, "track": 4}, {"weekday_name": "Saturday", "hour": 1, "track": 2}, {"weekday_name": "Saturday", "hour": 0, "track": 6}, {"weekday_name": "Saturday", "hour": 22, "track": 5}, {"weekday_name": "Saturday", "hour": 11, "track": 2}, {"weekday_name": "Saturday", "hour": 14, "track": 2}, {"weekday_name": "Saturday", "hour": 15, "track": 8}, {"weekday_name": "Saturday", "hour": 16, "track": 2}, {"weekday_name": "Saturday", "hour": 17, "track": 1}, {"weekday_name": "Sunday", "hour": 17, "track": 6}, {"weekday_name": "Sunday", "hour": 20, "track": 9}, {"weekday_name": "Sunday", "hour": 21, "track": 12}, {"weekday_name": "Sunday", "hour": 22, "track": 4}, {"weekday_name": "Sunday", "hour": 23, "track": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">to_sort</span> <span class="o">=</span> <span class="n">sort</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">weekday_hour_counts</span><span class="p">[</span><span class="s1">&#39;weekday_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">sorted_days</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">weekday_hour_counts</span><span class="p">)</span><span class="o">.</span><span class="n">mark_area</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;hour:T&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;track:Q&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;weekday_name:N&quot;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="n">to_sort</span><span class="p">),</span>
+    <span class="n">row</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Row</span><span class="p">(</span><span class="s2">&quot;weekday_name:N&quot;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="n">to_sort</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">100</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-a18e4045145b4dff8e850bf1e97766ea"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-a18e4045145b4dff8e850bf1e97766ea") {
+      outputDiv = document.getElementById("altair-viz-a18e4045145b4dff8e850bf1e97766ea");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-e77d4169d69d50469e705ea081fcba9b"}, "mark": "area", "encoding": {"color": {"type": "nominal", "field": "weekday_name", "sort": ["Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Thursday", "Thursday", "Thursday", "Thursday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Sunday", "Sunday", "Sunday", "Sunday", "Sunday"]}, "row": {"type": "nominal", "field": "weekday_name", "sort": ["Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Monday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Wednesday", "Thursday", "Thursday", "Thursday", "Thursday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Saturday", "Sunday", "Sunday", "Sunday", "Sunday", "Sunday"]}, "x": {"type": "temporal", "field": "hour"}, "y": {"type": "quantitative", "field": "track"}}, "height": 100, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-e77d4169d69d50469e705ea081fcba9b": [{"weekday_name": "Monday", "hour": 20, "track": 2}, {"weekday_name": "Monday", "hour": 0, "track": 11}, {"weekday_name": "Monday", "hour": 15, "track": 3}, {"weekday_name": "Monday", "hour": 16, "track": 1}, {"weekday_name": "Monday", "hour": 18, "track": 11}, {"weekday_name": "Monday", "hour": 19, "track": 7}, {"weekday_name": "Monday", "hour": 21, "track": 6}, {"weekday_name": "Monday", "hour": 23, "track": 7}, {"weekday_name": "Tuesday", "hour": 0, "track": 3}, {"weekday_name": "Tuesday", "hour": 1, "track": 2}, {"weekday_name": "Tuesday", "hour": 2, "track": 4}, {"weekday_name": "Tuesday", "hour": 15, "track": 2}, {"weekday_name": "Tuesday", "hour": 16, "track": 3}, {"weekday_name": "Tuesday", "hour": 23, "track": 12}, {"weekday_name": "Tuesday", "hour": 22, "track": 5}, {"weekday_name": "Wednesday", "hour": 22, "track": 6}, {"weekday_name": "Wednesday", "hour": 23, "track": 12}, {"weekday_name": "Wednesday", "hour": 0, "track": 8}, {"weekday_name": "Wednesday", "hour": 2, "track": 1}, {"weekday_name": "Wednesday", "hour": 15, "track": 2}, {"weekday_name": "Wednesday", "hour": 16, "track": 10}, {"weekday_name": "Wednesday", "hour": 17, "track": 12}, {"weekday_name": "Wednesday", "hour": 18, "track": 2}, {"weekday_name": "Thursday", "hour": 20, "track": 1}, {"weekday_name": "Thursday", "hour": 18, "track": 3}, {"weekday_name": "Thursday", "hour": 1, "track": 4}, {"weekday_name": "Thursday", "hour": 0, "track": 9}, {"weekday_name": "Friday", "hour": 0, "track": 9}, {"weekday_name": "Friday", "hour": 1, "track": 5}, {"weekday_name": "Friday", "hour": 2, "track": 4}, {"weekday_name": "Friday", "hour": 17, "track": 8}, {"weekday_name": "Friday", "hour": 18, "track": 1}, {"weekday_name": "Friday", "hour": 20, "track": 1}, {"weekday_name": "Friday", "hour": 22, "track": 7}, {"weekday_name": "Friday", "hour": 23, "track": 4}, {"weekday_name": "Saturday", "hour": 1, "track": 2}, {"weekday_name": "Saturday", "hour": 0, "track": 6}, {"weekday_name": "Saturday", "hour": 22, "track": 5}, {"weekday_name": "Saturday", "hour": 11, "track": 2}, {"weekday_name": "Saturday", "hour": 14, "track": 2}, {"weekday_name": "Saturday", "hour": 15, "track": 8}, {"weekday_name": "Saturday", "hour": 16, "track": 2}, {"weekday_name": "Saturday", "hour": 17, "track": 1}, {"weekday_name": "Sunday", "hour": 17, "track": 6}, {"weekday_name": "Sunday", "hour": 20, "track": 9}, {"weekday_name": "Sunday", "hour": 21, "track": 12}, {"weekday_name": "Sunday", "hour": 22, "track": 4}, {"weekday_name": "Sunday", "hour": 23, "track": 3}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
